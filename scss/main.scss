@@ -1,6 +1,8 @@
 $primary-color: #ffefe7;
 $secondary-color: #ffdac6;
 $tertiary-color: #babd8d;
+$fort-orange: #e86424;
+$light-orange: #fa9500;
 $primary-text-color: #7c6a0a;
 $font-stack: "IBM Plex Sans", sans-serif;
 
@@ -14,6 +16,8 @@ $font-stack: "IBM Plex Sans", sans-serif;
 
 html {
   font-size: 62.5%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
 }
 
 html,
@@ -29,4 +33,96 @@ h3 {
 }
 p {
   text-wrap: pretty;
+}
+//navbar
+.navbar {
+  background-color: $primary-color;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 25px;
+  .navbar-header {
+    display: flex;
+    align-items: center;
+    .navbar-title {
+      flex: 1;
+      a {
+        color: $primary-text-color;
+        font-size: 2.4rem;
+        text-decoration: none;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.navbar-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  a {
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: $primary-text-color;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+// Estilos responsivos
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-header {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .bar {
+    transition: transform 0.4s;
+  }
+
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
