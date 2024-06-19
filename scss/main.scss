@@ -34,6 +34,9 @@ h3 {
 p {
   text-wrap: pretty;
 }
+body {
+  background-color: $primary-color;
+}
 //navbar
 .navbar {
   background-color: $primary-color;
@@ -49,7 +52,7 @@ p {
       flex: 1;
       a {
         color: $primary-text-color;
-        font-size: 2.4rem;
+        font-size: 2rem;
         text-decoration: none;
         font-weight: 400;
       }
@@ -81,9 +84,55 @@ p {
   margin: 5px 0;
   transition: 0.4s;
 }
+//hero section
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    grid-area: 10px;
+    h1 {
+      margin: 10px 0 15px 0;
+      font-size: 2.8rem;
+      color: $primary-text-color;
+      font-weight: 600;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: $primary-text-color;
+    }
+    button {
+      background-color: $light-orange;
+      width: 150px;
+      height: 42px;
+      border: none;
+      border-radius: 20.13px;
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 1.3rem;
+      margin: 20px auto 60px auto;
+    }
+  }
+  figure {
+    width: 90%;
+    margin: 0 auto;
+    img {
+      height: 45vh;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 7px;
+    }
+  }
+}
 
 // Estilos responsivos
 @media (max-width: 768px) {
+  //navbar
   .navbar {
     flex-direction: column;
     align-items: flex-start;

@@ -28,6 +28,10 @@ p {
   text-wrap: pretty;
 }
 
+body {
+  background-color: #ffefe7;
+}
+
 .navbar {
   background-color: #ffefe7;
   overflow: hidden;
@@ -45,7 +49,7 @@ p {
 }
 .navbar .navbar-header .navbar-title a {
   color: #7c6a0a;
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-decoration: none;
   font-weight: 400;
 }
@@ -74,6 +78,53 @@ p {
   background-color: #7c6a0a;
   margin: 5px 0;
   transition: 0.4s;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.hero .hero-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  grid-area: 10px;
+}
+.hero .hero-container h1 {
+  margin: 10px 0 15px 0;
+  font-size: 2.8rem;
+  color: #7c6a0a;
+  font-weight: 600;
+}
+.hero .hero-container p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #7c6a0a;
+}
+.hero .hero-container button {
+  background-color: #fa9500;
+  width: 150px;
+  height: 42px;
+  border: none;
+  border-radius: 20.13px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin: 20px auto 60px auto;
+}
+.hero figure {
+  width: 90%;
+  margin: 0 auto;
+}
+.hero figure img {
+  height: 45vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 7px;
 }
 
 @media (max-width: 768px) {
