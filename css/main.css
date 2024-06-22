@@ -230,6 +230,30 @@ body {
   text-wrap: pretty;
 }
 
+.gallery2 {
+  padding: 0 20px;
+  padding-bottom: 60px;
+}
+.gallery2 h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #7c6a0a;
+  padding-bottom: 70px;
+}
+.gallery2 .gallery2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.gallery2 .gallery2-container img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
