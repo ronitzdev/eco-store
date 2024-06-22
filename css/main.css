@@ -127,15 +127,15 @@ body {
   border-radius: 7px;
 }
 
-.health {
+.gallery {
   padding: 0 20px;
 }
-.health h2 {
+.gallery h2 {
   font-size: 2.4rem;
   font-weight: 500;
   color: #7c6a0a;
 }
-.health .health-container {
+.gallery .gallery-container {
   margin: 30px 0 60px 0;
   display: flex;
   /* overflow-scroll-x */
@@ -144,7 +144,7 @@ body {
   scroll-snap-type: x proximity;
   gap: 15px;
 }
-.health .health-container .card {
+.gallery .gallery-container .card {
   position: relative;
   background-color: #ffdac6;
   width: 250px;
@@ -154,37 +154,44 @@ body {
   /* overflow-scroll-center-card */
   scroll-snap-align: center;
 }
-.health .health-container .card .icon {
+.gallery .gallery-container .card .icon {
   position: absolute;
   right: 11px;
   top: 12px;
 }
-.health .health-container .card figure {
+.gallery .gallery-container .card figure {
   width: 100%;
   height: 220px;
   margin: 0 auto;
   border-radius: 3.58px;
   overflow: hidden;
 }
-.health .health-container .card figure img {
+.gallery .gallery-container .card figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.health .health-container .card .body {
+.gallery .gallery-container .card .body {
   padding-top: 10px;
 }
-.health .health-container .card .body h3 {
+.gallery .gallery-container .card .body h3 {
   font-weight: 600px;
   color: #7c6a0a;
   font-size: 1.6rem;
 }
-.health .health-container .card .body p {
+.gallery .gallery-container .card .body p {
   font-size: 1.4rem;
   font-weight: 400;
   color: #7c6a0a;
   text-align: left;
+}
+.gallery .gallery-container .card--color {
+  background-color: #7c6a0a;
+}
+.gallery .gallery-container .card--color .body h3,
+.gallery .gallery-container .card--color .body p {
+  color: white;
 }
 
 @media (max-width: 768px) {
