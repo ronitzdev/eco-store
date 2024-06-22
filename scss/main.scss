@@ -129,6 +129,68 @@ body {
     }
   }
 }
+//health section
+.health {
+  padding: 0 20px;
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: $primary-text-color;
+  }
+  //container
+  .health-container {
+    margin: 30px 0 60px 0;
+    display: flex;
+    /* overflow-scroll-x */
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 15px;
+    //card
+    .card {
+      position: relative;
+      background-color: $secondary-color;
+      width: 250px;
+      min-width: 250px;
+      padding: 45px 30px 20px 30px;
+      border-radius: 4.5px;
+      /* overflow-scroll-center-card */
+      scroll-snap-align: center;
+      width: 70%;
+      .icon {
+        position: absolute;
+        right: 11px;
+        top: 12px;
+      }
+      figure {
+        width: 100%;
+        height: 220px;
+        margin: 0 auto;
+        border-radius: 3.58px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .body {
+        padding-top: 10px;
+        h3 {
+          font-weight: 600px;
+          color: $primary-text-color;
+          font-size: 1.6rem;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: $primary-text-color;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
 
 // Estilos responsivos
 @media (max-width: 768px) {
