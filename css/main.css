@@ -195,6 +195,41 @@ body {
   color: white;
 }
 
+.about {
+  padding: 0 20px;
+}
+.about h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #7c6a0a;
+  padding-bottom: 70px;
+}
+.about .info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.about .info-container .info {
+  width: 200px;
+}
+.about .info-container .info figure {
+  width: 100%;
+}
+.about .info-container .info figure img {
+  width: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .info-container .info p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e86424;
+  text-wrap: pretty;
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;

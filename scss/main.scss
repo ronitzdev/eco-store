@@ -200,7 +200,40 @@ body {
     }
   }
 }
-
+//about section
+.about {
+  padding: 0 20px;
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: $primary-text-color;
+    padding-bottom: 70px;
+  }
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    padding-bottom: 60px;
+    .info {
+      width: 200px;
+      figure {
+        width: 100%;
+        img {
+          width: 35%;
+          object-fit: cover;
+        }
+      }
+      p {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $fort-orange;
+        text-wrap: pretty;
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   //navbar
   .navbar {
