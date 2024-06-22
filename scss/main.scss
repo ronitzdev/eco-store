@@ -257,6 +257,43 @@ body {
     }
   }
 }
+//location section
+.location {
+  padding: 0 20px;
+  padding-bottom: 30px;
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: $primary-text-color;
+    padding-bottom: 40px;
+  }
+  figure {
+    width: 100%; /* Ancho deseado del área recortada */
+    height: 500px; /* Alto deseado del área recortada */
+    overflow: hidden; /* Oculta las partes de la imagen fuera del contenedor */
+    position: relative; /* Permite ajustar la posición de la imagen */
+    img {
+      position: absolute;
+      //top: -50px; /* Ajusta la posición vertical de la imagen dentro del contenedor */
+      left: -300px; /* Ajusta la posición horizontal de la imagen dentro del contenedor */
+      height: 100%;
+      padding-bottom: 20px;
+    }
+  }
+  h5,
+  p {
+    color: $fort-orange;
+  }
+  h5 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: 1.6rem;
+    padding-bottom: 60px;
+  }
+}
+
 @media (max-width: 768px) {
   //navbar
   .navbar {

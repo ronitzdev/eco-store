@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   position: relative;
   min-width: 0;
@@ -252,6 +253,41 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 12px;
+}
+
+.location {
+  padding: 0 20px;
+  padding-bottom: 30px;
+}
+.location h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #7c6a0a;
+  padding-bottom: 40px;
+}
+.location figure {
+  width: 100%; /* Ancho deseado del área recortada */
+  height: 500px; /* Alto deseado del área recortada */
+  overflow: hidden; /* Oculta las partes de la imagen fuera del contenedor */
+  position: relative; /* Permite ajustar la posición de la imagen */
+}
+.location figure img {
+  position: absolute;
+  left: -300px; /* Ajusta la posición horizontal de la imagen dentro del contenedor */
+  height: 100%;
+  padding-bottom: 20px;
+}
+.location h5,
+.location p {
+  color: #e86424;
+}
+.location h5 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+.location p {
+  font-size: 1.6rem;
+  padding-bottom: 60px;
 }
 
 @media (max-width: 768px) {
