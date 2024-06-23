@@ -377,6 +377,10 @@ footer {
     flex-direction: row;
     justify-content: center;
   }
+
+  .gallery .gallery-container {
+    overflow-x: none;
+  }
   .gallery2 .gallery2-container {
     flex-direction: row;
   }
