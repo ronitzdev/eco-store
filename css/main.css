@@ -89,7 +89,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  grid-area: 10px;
 }
 .hero .hero-container h1 {
   margin: 10px 0 15px 0;
@@ -351,5 +350,68 @@ footer .social-media a img {
   }
   .change .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+@media (min-width: 768px) {
+  .about .info-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .gallery2 .gallery2-container {
+    flex-direction: row;
+  }
+  .location figure img {
+    left: 0;
+    height: auto;
+  }
+  .footer-container .social-media {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+  }
+  .hero .hero-container {
+    width: 50%;
+  }
+  .hero .hero-container button {
+    margin: 20px 0 0 0;
+  }
+  .hero figure {
+    width: 46%;
+  }
+  .gallery .gallery-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  .about .info-container {
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery {
+    padding-bottom: 70px;
+  }
+  .gallery .gallery-container {
+    width: 75%;
+    margin: 0 auto;
+    gap: 50px;
+  }
+  .gallery h2 {
+    padding-bottom: 60px;
+  }
+  .gallery2 .gallery2-container {
+    justify-content: center;
+  }
+  .location figure img {
+    padding-left: 45px;
+  }
+  .location h5,
+  .location p {
+    padding-left: 45px;
   }
 }/*# sourceMappingURL=main.css.map */
